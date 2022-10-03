@@ -362,7 +362,7 @@ def predict(num_chars, prefix):
         # gumbel feed will have the diminsion (256)
         gumbel_feed = outp[0, len(inp)]
         # get the next charchter based on the gumbel distribution
-        next_char = gumbel_sample(gumbel_feed, temperature=0)
+        next_char = gumbel_sample(gumbel_feed)
         # append the predicted char (numeric value) to the input sequence
         # and loop again to predict the next char
         inp += [int(next_char)]
