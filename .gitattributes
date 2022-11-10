@@ -1,2 +1,4 @@
 *.pkl.gz filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
+*.tfrecord* filter=lfs diff=lfs merge=lfs -text
+*.npy.gz filter=lfs diff=lfs merge=lfs -text
